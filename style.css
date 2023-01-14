@@ -1,0 +1,136 @@
+.body{
+    background-color: lightsteelblue;
+    font-family: 'Open Sans', sans-serif;
+}
+/* nav style */
+.header{
+    display: flex;
+    background-color: blue;
+    border-radius: 5px;
+    height: 100px;
+    justify-content: space-around;
+   
+}
+
+.nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+   
+}
+.nav img{
+    height: 50px;
+    width: 100%;
+}
+.nav h3 ,.nav1 h3{
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+.nav1>ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+/* Header end */
+
+/* main body section style */
+.main-container{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-top:50px ; 
+   
+  
+}
+.main-container>h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 50px 0px 50px 50px;
+    color: blue;
+}
+.sec-con>ul{
+    display: grid;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+   
+
+}
+.div-1{
+     display: flex;
+}
+
+.div-1>h3{
+    font-size: 20px;
+    font-weight: 600;
+} 
+.div-1>img{
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+}
+/* main second container */
+
+.second-container>ul{
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+
+}
+a{
+    text-decoration: none;
+}
+.img1{
+    width: 50%;
+}
+
+
+/* media queary */
+
+@media screen and (max-width:576px) {
+    .header{
+        flex-direction: column;
+        height: 200px;
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+
+    }
+    .sec-con>ul{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    .second-container{
+        padding: 0 35px 0 0;
+    }
+    .img1{
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav,.nav1{
+        align-items: center;
+        padding-top: 10px;
+    }
+    .main-container{
+        width: 100%;
+
+    }
+    .img1{
+        width: 100%;
+    }
+    .second-container{
+        padding: 0 35px 0 0;
+}
+}
